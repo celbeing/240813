@@ -33,6 +33,12 @@ if "messages" not in st.session_state:
 # 탭을 생성
 main_tab1, main_tab2 = st.tabs(["이미지", "대화내용"])
 
+with main_tab1:
+    col1,col2 = st.columns(2)
+    with col1:
+        st.header('Col1')
+        st.image('https://github.com/celbeing/240813/)
+
 
 # 사이드바 생성
 with st.sidebar:
