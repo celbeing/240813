@@ -4,7 +4,7 @@ from PIL import Image
 import os
 
 # Tesseract 실행 파일 경로 설정 (Windows 사용자의 경우 필요할 수 있음)
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 # 캐시 디렉토리 생성
 if not os.path.exists(".cache"):
